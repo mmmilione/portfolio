@@ -1,0 +1,1 @@
+export const navigate = url => url ? window.open(url) : false;

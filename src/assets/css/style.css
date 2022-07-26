@@ -1,0 +1,166 @@
+body{
+    background-color: black;
+    color: white;
+    padding: 0px !important;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px !important;
+    transition: all .8s ease;
+}
+
+body.light{
+    background-color: #f5f5f5;
+    color: black;
+    transition: all .8s ease;
+}
+
+.container{
+    position: relative;
+    width: 100% !important;
+    margin: 0px !important;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+@media screen and (max-width: 749px){
+    .container{
+        display: block;
+    }
+}
+
+.footer{
+    color: darkgrey;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    background-color: rgba(169, 169, 169, 0.299);
+}
+
+body.light .footer{
+    background-color: white;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body.light a {
+    color: black;
+}
+
+.BTN{
+    border: 1px solid yellow;
+    border-radius: 7px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.5s;
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+}
+
+body.light .BTN{
+    background-color: lightgreen;
+    color: black;
+    border: transparent;
+}
+
+.BTN:hover{
+    font-size: 16.3px;
+    transition: 0.5s;
+    border: 2px solid white;
+}
+
+body.light .BTN:hover{
+    border: 2px solid green;
+}
+
+.BTN:disabled{
+    background-color:grey;
+}
+
+.BTN:disabled:hover{
+    background-color: grey;
+    font-size: 16px;
+    color: white;
+}
+
+.fadein{
+    animation: fadeIn 2s;
+}
+
+.hide{
+    display: none;
+}
+
+.box{
+    position: relative;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(169, 169, 169, 0.299);
+    min-height: 80vh;
+}
+
+canvas{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1
+}
+
+@media screen and (max-width: 992px){
+    canvas{
+        position: absolute;
+        top: 30px;
+    }
+}
+
+body.light .box{
+    border: 1px solid lightgreen;
+}
+
+@media screen and (max-width: 749px){
+    .box{
+        border: none;
+        margin: 0;
+    }
+
+    body.light .box{
+        border: none;
+    }
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.accent{
+    color: yellow;
+    transition: all .8s ease;
+}
+
+body.light .accent{
+    color: green;
+    transition: all .8s ease;
+}
+
+.black{
+    color: black;
+}
+
+.pad20{
+    padding: 20px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
