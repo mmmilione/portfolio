@@ -42,12 +42,22 @@
     import qbita from '../assets/images/qbita.png'
     import portfolio from '../assets/images/portfolio.png'
     import criptolibre from '../assets/images/criptolibre.png'
+    import unrealart from '../assets/images/unreal.png'
+    import aal from '../assets/images/AAL.png'
 
     export default {
         components: { Project, PortfolioModal },
         setup(){
 
             const projects = ref([
+                {
+                    name: "UnrealArt", 
+                    pic: unrealart, 
+                    url: "https://unrealart.io",
+                    description: "UnrealArt is a 3D art gallery and marketplace where people can mint and trade NFTs of AI generated art.",
+                    tech: ['Vue', 'NodeJS', 'ThreeJS', 'Solidity', 'GitHub'],
+                    git: "https://github.com/mmmilione/UnrealArt",
+                },
                 {
                     name: "CriptoLibre", 
                     pic: criptolibre, 
@@ -70,6 +80,15 @@
                     url: "https://qbita.org",
                     description: "QBita is a Bitcoin wallet and P2P exchange which allows the Cuban people to bypass the US Embargo",
                     tech: ['HTML', 'CSS', 'NodeJS', 'Vue', 'Bitcoin']
+                },
+
+                {
+                    name: "AAL Token", 
+                    pic: aal, 
+                    url: "https://antarctic.antarcticlands.org/",
+                    description: "Airdrop and Presale of a crypto token (BEP20) for a low budget client.",
+                    tech: ['PHP', 'JS', 'CSS', 'Solidity', 'GitHub'],
+                    git: "https://github.com/mmmilione/AAL"
                 },
 
                 {
@@ -108,9 +127,8 @@
         margin-bottom: 40px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: minmax(360px, auto);
         width: 95%;
-        grid-gap: 10px;
+        grid-gap: 30px;
     }
 
     h4{margin-top: 60px;}

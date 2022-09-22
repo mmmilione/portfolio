@@ -75,7 +75,7 @@
 
     @media screen and (max-width: 992px){
         .project{
-            margin-bottom: 40px;
+            margin-bottom: 50px !important;
             width: 98%;
             height: 330px;
         }
