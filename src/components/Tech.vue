@@ -40,6 +40,10 @@ import { onMounted, ref } from 'vue'
                     color = 'red'
                 }else if(props.name == 'JS'){
                     color = 'yellow';
+                }else if(props.name == 'PHP'){
+                    color = 'lightblue';
+                }else if(props.name == 'ThreeJS'){
+                    color = 'pink';
                 }else{
                     color = 'white'
                 }
