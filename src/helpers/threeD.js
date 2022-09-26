@@ -177,7 +177,24 @@ const planetFactory = (planetTexture, radius, widthSegments, heightSegments) => 
     return sphere;
 }
 
+const resizeRendererToDisplaySize = (renderer) => {
+    const canvas = renderer.domElement;
+    const width = canvas.clientWidth;
+    const height = canvas.clientHeight;
+    const needResize = canvas.width !== width || canvas.height !== height;
+    if (needResize) {
+      renderer.setSize(width, height, false);
+    }
+    return needResize;
+}
+
 const animate = () => {
+
+    if (resizeRendererToDisplaySize(renderer)) {
+        const canvas = renderer.domElement;
+        camera.aspect = canvas.clientWidth / canvas.clientHeight;
+        camera.updateProjectionMatrix();
+    }
 
     animateMoon();
     animateBTC();

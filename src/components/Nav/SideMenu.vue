@@ -24,10 +24,10 @@
             <h1 class = "social-container center" v-if="isOpen">
                 <span></span>
                 <a href='https://github.com/mmmilione' target='_blank'>
-                    <i class = "fab fa-github black"></i>
+                    <i class = "fab fa-github white"></i>
                 </a>
                 <a href='https://it.linkedin.com/in/mario-mazzola-7a711412' target="_blank">
-                    <i class = "fab fa-linkedin black"></i>
+                    <i class = "fab fa-linkedin white"></i>
                 </a>
                 <span></span>
             </h1>
@@ -100,7 +100,7 @@ import Switch from '../Switch.vue';
 
     .social-container{
         width: 100%;
-        background-color: white;
+        background-color: transparent;
         height: 60px;
         display: grid;
         grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -109,7 +109,7 @@ import Switch from '../Switch.vue';
     }
 
     body.light .social-container{
-        background-color: whitesmoke;
+        background-color: transparent;
     }
 
     .navLinks-enter-from{

@@ -20,12 +20,13 @@
     input{
         width: 95%;
         height: 30px;
-        font-size: 18px;
+        font-size: 18px !important;
         margin: auto;
         margin-bottom: 20px;
         padding: 5px;
         border-radius: 5px;
         transition: 0.7s;
+        font-family: 'Poppins', sans-serif;
     }
     input:focus{
         outline-style: none;
